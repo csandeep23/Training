@@ -7,9 +7,21 @@
 //
 
 #include <iostream>
+#include "addition.hpp"
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World 123!\n";
+    int choice;
+    cout << "Choose the program to run:\n";
+    cout << "\t1.Addition\n";
+    cin >> choice;
+    switch (choice) {
+        case 1:
+            addition();
+            break;
+        default:
+            break;
+    }
     return 0;
 }
