@@ -2,8 +2,8 @@ CC = g++
 CFLAGS = -std=c++11 -pthread
 RM = rm -rf
 
-all: main.o addition.o
-	@$(CC) $(CFLAGS) -o run main.o addition.o
+all: main.o addition.o knapsack.o
+	@$(CC) $(CFLAGS) -o run main.o addition.o knapsack.o
 	@$(RM) *.o
 
 main.o: main.cpp 
@@ -11,6 +11,9 @@ main.o: main.cpp
 
 addition.o: addition.cpp addition.hpp
 	@$(CC) $(CFLAGS) -c addition.cpp
+
+knapsack.o: knapsack.cpp knapsack.hpp
+	@$(CC) $(CFLAGS) -c knapsack.cpp
 
 clean: 
 	@$(RM) run *.o
