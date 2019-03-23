@@ -11,7 +11,7 @@
 void knapsack(){
 	int total = getTotal();
 	set<int> coins = getCoins();
-	//cout << "Total is " << total << endl;
+	cout << "Total is " << total << endl;
 }
 
 int getTotal(){
@@ -20,9 +20,9 @@ int getTotal(){
 	cin >> total;
 	if(total<0||total>INT_MAX) {
 		cout << "Invalid total amount. Exiting." << endl;
-		exit;
+		exit(0);
 	}
-	return total;
+	return int(total);
 }
 
 set<int> getCoins () {
