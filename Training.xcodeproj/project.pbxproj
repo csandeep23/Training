@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		879C91B72244AF7E0054CB55 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 879C91B62244AF7E0054CB55 /* main.cpp */; };
-		879C91BF224520FD0054CB55 /* addition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 879C91BD224520FD0054CB55 /* addition.cpp */; };
-		879C91D42246779C0054CB55 /* knapsack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 879C91D22246779C0054CB55 /* knapsack.cpp */; };
+		879C91D72249EB400054CB55 /* reorganize_string.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 879C91D52249EB400054CB55 /* reorganize_string.cpp */; };
+		879C91E02249EE2F0054CB55 /* knapsack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 879C91DC2249EE2F0054CB55 /* knapsack.cpp */; };
+		879C91E12249EE2F0054CB55 /* addition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 879C91DF2249EE2F0054CB55 /* addition.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,10 +28,12 @@
 /* Begin PBXFileReference section */
 		879C91B32244AF7E0054CB55 /* Training */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Training; sourceTree = BUILT_PRODUCTS_DIR; };
 		879C91B62244AF7E0054CB55 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		879C91BD224520FD0054CB55 /* addition.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = addition.cpp; sourceTree = "<group>"; };
-		879C91BE224520FD0054CB55 /* addition.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = addition.hpp; sourceTree = "<group>"; };
-		879C91D22246779C0054CB55 /* knapsack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = knapsack.cpp; sourceTree = "<group>"; };
-		879C91D32246779C0054CB55 /* knapsack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = knapsack.hpp; sourceTree = "<group>"; };
+		879C91D52249EB400054CB55 /* reorganize_string.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = reorganize_string.cpp; sourceTree = "<group>"; };
+		879C91D62249EB400054CB55 /* reorganize_string.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = reorganize_string.hpp; sourceTree = "<group>"; };
+		879C91DC2249EE2F0054CB55 /* knapsack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = knapsack.cpp; sourceTree = "<group>"; };
+		879C91DD2249EE2F0054CB55 /* knapsack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = knapsack.hpp; sourceTree = "<group>"; };
+		879C91DE2249EE2F0054CB55 /* addition.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = addition.hpp; sourceTree = "<group>"; };
+		879C91DF2249EE2F0054CB55 /* addition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = addition.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				879C91B62244AF7E0054CB55 /* main.cpp */,
-				879C91D22246779C0054CB55 /* knapsack.cpp */,
-				879C91D32246779C0054CB55 /* knapsack.hpp */,
-				879C91BD224520FD0054CB55 /* addition.cpp */,
-				879C91BE224520FD0054CB55 /* addition.hpp */,
+				879C91DF2249EE2F0054CB55 /* addition.cpp */,
+				879C91DE2249EE2F0054CB55 /* addition.hpp */,
+				879C91DC2249EE2F0054CB55 /* knapsack.cpp */,
+				879C91DD2249EE2F0054CB55 /* knapsack.hpp */,
+				879C91D52249EB400054CB55 /* reorganize_string.cpp */,
+				879C91D62249EB400054CB55 /* reorganize_string.hpp */,
 			);
 			path = Training;
 			sourceTree = "<group>";
@@ -129,8 +134,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				879C91B72244AF7E0054CB55 /* main.cpp in Sources */,
-				879C91BF224520FD0054CB55 /* addition.cpp in Sources */,
-				879C91D42246779C0054CB55 /* knapsack.cpp in Sources */,
+				879C91E12249EE2F0054CB55 /* addition.cpp in Sources */,
+				879C91D72249EB400054CB55 /* reorganize_string.cpp in Sources */,
+				879C91E02249EE2F0054CB55 /* knapsack.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
