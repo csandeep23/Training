@@ -16,7 +16,7 @@
 using namespace std;
 
 void knapsack();
-
+int pick_knapsack(int total,set<int> coins);
 int getTotal();
 set<int> getCoins();
 

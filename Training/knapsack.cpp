@@ -11,7 +11,34 @@
 void knapsack(){
 	int total = getTotal();
 	set<int> coins = getCoins();
-	cout << "Total is " << total << endl;
+	cout << "The number of ways to select the coins is " << pick_knapsack(total,coins) << "\n" << endl;
+}
+
+int pick_knapsack(int total,set<int> coins){
+	int count=0;
+	int ways[coins.size()+1][total+1];
+	set<int>::iterator it=coins.begin();
+	ways[0][0]=1;
+	for(int i=1;i<=coins.size();i++){
+		ways[i][0]=1;
+		for(int j=1;j<=total;j++){
+			ways[0][j]=0;
+			if(j>=*it && i>0) {
+				ways[i][j]=ways[i-1][j]+ways[i][j-*it];
+			} else {
+				ways[i][j]=ways[i-1][j];
+			}
+			cout << i << " " << j << " " << ways[i][j] << " " << *it << endl;
+		}
+		it++;
+	}
+	for(int i=0;i<=coins.size();i++){
+		for(int j=0;j<=total;j++){
+			cout << ways[i][j] << " ";
+		}
+		cout << endl;
+	}
+	return ways[coins.size()+1][total+1];	
 }
 
 int getTotal(){
