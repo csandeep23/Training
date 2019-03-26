@@ -15,5 +15,8 @@ addition.o: addition.cpp addition.hpp
 knapsack.o: knapsack.cpp knapsack.hpp
 	@$(CC) $(CFLAGS) -c knapsack.cpp
 
+reorganize_string.o: reorganize_string.cpp reorganize_string.hpp
+@$(CC) $(CFLAGS) -c reorganize_string.cpp
+
 clean: 
 	@$(RM) run *.o
