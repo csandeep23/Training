@@ -19,6 +19,7 @@
 #include <iostream>
 #include <string>
 #include <unordered_map>
+#include <map>
 using namespace std;
 
 void reorganize_string();
