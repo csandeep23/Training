@@ -11,11 +11,11 @@
 void knapsack(){
 	int total = getTotal();
 	set<int> coins = getCoins();
-	cout << "The number of ways to select the coins is " << pick_knapsack(total,coins) << "\n" << endl;
+    cout << "The number of ways to select the coins is " << pick_knapsack(total,coins) << endl;
 }
 
 int pick_knapsack(int total,set<int> coins){
-	int count=0;
+    if(coins.size()==0) return 0;
 	int ways[coins.size()+1][total+1];
 	set<int>::iterator it=coins.begin();
 	ways[0][0]=1;
@@ -28,22 +28,24 @@ int pick_knapsack(int total,set<int> coins){
 			} else {
 				ways[i][j]=ways[i-1][j];
 			}
-			cout << i << " " << j << " " << ways[i][j] << " " << *it << endl;
+			//cout << i << " " << j << " " << ways[i][j] << " " << *it << endl;
 		}
 		it++;
 	}
+    /*
 	for(int i=0;i<=coins.size();i++){
 		for(int j=0;j<=total;j++){
 			cout << ways[i][j] << " ";
 		}
-		cout << endl;
+		cout << "Complete " << coins.size() << " " << total << endl;
 	}
-	return ways[coins.size()+1][total+1];	
+    */
+	return ways[coins.size()][total];
 }
 
 int getTotal(){
 	long total;
-	cout << "What is the total amount?";
+	cout << "What is the total amount? ";
 	cin >> total;
 	if(total<0||total>INT_MAX) {
 		cout << "Invalid total amount. Exiting." << endl;
@@ -61,6 +63,6 @@ set<int> getCoins () {
 		coins.insert(coin);
 		cin >> coin;
 	}
-	cout << "Added " << coins.size() << " coins.\n";
+	//cout << "Added " << coins.size() << " coins.\n";
 	return coins;
 }
